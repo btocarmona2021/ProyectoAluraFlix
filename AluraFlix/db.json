@@ -1,0 +1,156 @@
+{
+  "categorias": [
+    {
+      "id": "1",
+      "nombreequipo": "Desarrollo Frontend"
+    },
+    {
+      "id": "2",
+      "nombreequipo": "Desarrollo Backend"
+    },
+    {
+      "id": "3",
+      "nombreequipo": "Desarrollo Full Stack"
+    },
+    {
+      "id": "4",
+      "nombreequipo": "Desarrollo de Aplicaciones Móviles"
+    },
+    {
+      "id": "5",
+      "nombreequipo": "DevOps y Despliegue"
+    },
+    {
+      "id": "6",
+      "nombreequipo": "Ciencia de Datos y Analítica"
+    },
+    {
+      "id": "7",
+      "nombreequipo": "Diseño UI/UX"
+    },
+    {
+      "id": "8",
+      "nombreequipo": "Aseguramiento de la Calidad y Pruebas"
+    },
+    {
+      "id": "9",
+      "nombreequipo": "Gestión de Proyectos"
+    },
+    {
+      "id": "10",
+      "nombreequipo": "Soporte de TI y Operaciones"
+    },
+    {
+      "id": "11",
+      "nombreequipo": "Seguridad de Redes"
+    },
+    {
+      "id": "12",
+      "nombreequipo": "Infraestructura en la Nube"
+    },
+    {
+      "id": "13",
+      "nombreequipo": "Administración de Bases de Datos"
+    },
+    {
+      "id": "14",
+      "nombreequipo": "Investigación en Aprendizaje Automático"
+    },
+    {
+      "id": "15",
+      "nombreequipo": "Soporte al Cliente"
+    },
+    {
+      "id": "16",
+      "nombreequipo": "Marketing y Comunicación"
+    },
+    {
+      "id": "17",
+      "nombreequipo": "Creación de Contenidos"
+    },
+    {
+      "id": "18",
+      "nombreequipo": "Inteligencia de Negocios"
+    },
+    {
+      "id": "19",
+      "nombreequipo": "Finanzas y Contabilidad"
+    },
+    {
+      "id": "20",
+      "nombreequipo": "Legal y Cumplimiento"
+    }
+  ],
+  "videos": [
+    {
+      "titulo": "Introducción a React.js",
+      "enlace": "https://www.youtube.com/watch?v=Ke90Tje7VS0",
+      "imagen": "https://example.com/react-intro.jpg",
+      "categoria": "Desarrollo Frontend",
+      "descripcion": "Aprende los conceptos básicos de React.js, cómo crear componentes, manejar el estado y utilizar JSX para desarrollar interfaces de usuario dinámicas."
+    },
+    {
+      "titulo": "Node.js: Construyendo una API RESTful",
+      "enlace": "https://www.youtube.com/watch?v=9rSlkIyrQ0A",
+      "imagen": "https://example.com/node-api.jpg",
+      "categoria": "Desarrollo Backend",
+      "descripcion": "Descubre cómo construir una API RESTful utilizando Node.js y Express, implementando rutas, middlewares y conectando con una base de datos."
+    },
+    {
+      "titulo": "Introducción a Docker",
+      "enlace": "https://www.youtube.com/watch?v=-2Ztjxz3_4E",
+      "imagen": "https://example.com/docker-intro.jpg",
+      "categoria": "DevOps y Despliegue",
+      "descripcion": "Explora los fundamentos de Docker, cómo crear, gestionar y desplegar contenedores para aplicaciones de forma eficiente y escalable."
+    },
+    {
+      "titulo": "Análisis de Datos con Python y Pandas",
+      "enlace": "https://www.youtube.com/watch?v=XK8R9lVVwgg",
+      "imagen": "https://example.com/python-pandas.jpg",
+      "categoria": "Ciencia de Datos y Analítica",
+      "descripcion": "Aprende a realizar análisis de datos utilizando Python y la biblioteca Pandas, desde la carga de datos hasta la generación de insights y visualizaciones."
+    },
+    {
+      "titulo": "Fundamentos de Diseño UI/UX",
+      "enlace": "https://www.youtube.com/watch?v=oSAsCquXh4A",
+      "imagen": "https://example.com/ui-ux-design.jpg",
+      "categoria": "Diseño UI/UX",
+      "descripcion": "Descubre los principios básicos del diseño de interfaz de usuario (UI) y experiencia de usuario (UX) para crear productos intuitivos y atractivos."
+    },
+    {
+      "titulo": "Automatización de Pruebas con Selenium",
+      "enlace": "https://www.youtube.com/watch?v=zTa-SmhfynM",
+      "imagen": "https://example.com/selenium-testing.jpg",
+      "categoria": "Aseguramiento de la Calidad y Pruebas",
+      "descripcion": "Aprende a automatizar pruebas de software con Selenium WebDriver, escribiendo scripts para probar aplicaciones web de forma eficiente y efectiva."
+    },
+    {
+      "titulo": "Gestión de Proyectos Agile con Scrum",
+      "enlace": "https://www.youtube.com/watch?v=g2DFVUzL1Wk",
+      "imagen": "https://example.com/scrum-agile.jpg",
+      "categoria": "Project Management",
+      "descripcion": "Entiende los principios de Scrum y cómo implementar la metodología Agile para gestionar proyectos de forma colaborativa y adaptable."
+    },
+    {
+      "titulo": "Seguridad en Redes y Firewalls",
+      "enlace": "https://www.youtube.com/watch?v=4tGyAZNeGww",
+      "imagen": "https://example.com/network-security.jpg",
+      "categoria": "Seguridad de Redes",
+      "descripcion": "Explora los fundamentos de la seguridad en redes, incluyendo firewalls, protocolos seguros y prácticas para proteger datos y sistemas."
+    },
+    {
+      "titulo": "Infraestructura en la Nube con AWS",
+      "enlace": "https://www.youtube.com/watch?v=NR2dQjD8IR4",
+      "imagen": "https://example.com/aws-cloud.jpg",
+      "categoria": "Cloud Infrastructure",
+      "descripcion": "Aprende a diseñar, implementar y gestionar infraestructuras en la nube utilizando Amazon Web Services (AWS) para escalabilidad y seguridad."
+    },
+    {
+      "titulo": "Administración Avanzada de Bases de Datos",
+      "enlace": "https://www.youtube.com/watch?v=ub3HtxVcYPw",
+      "imagen": "https://example.com/database-admin.jpg",
+      "categoria": "Administración de Bases de Datos",
+      "descripcion": "Descubre técnicas avanzadas para administrar bases de datos SQL y NoSQL, optimizando rendimiento, seguridad y disponibilidad."
+    }
+  ]
+}
