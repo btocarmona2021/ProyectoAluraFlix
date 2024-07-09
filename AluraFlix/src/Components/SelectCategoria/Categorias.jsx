@@ -1,4 +1,6 @@
 import styled from "styled-components";
+import {useState,useEffect} from "react";
+import {buscar} from "../../ConexionApi/ConexionApi.jsx";
 
 const SelectEstilizado = styled.select
     `
@@ -15,12 +17,22 @@ const SelectEstilizado = styled.select
         }
     `
 
-export const Categorias = () => {
+export const Categorias = ({url}) => {
+
+    const [categorias,setCategorias]=useState([])
+
+    useEffect(()=>{
+       buscar(url,setCategorias).catch(error=>console.log(error))
+    },[url])
+
     return (
         <>
             <SelectEstilizado name="" id="">
                 <option value="">Seleccione una categoría</option>
-                <option value="">Categoria 01</option>
+                ${categorias.map((categoria)=>{
+                    return <option value={categoria.nombreequipo} key={categoria.id}>{categoria.nombreequipo}</option>
+            })}
+
             </SelectEstilizado>
 
         </>

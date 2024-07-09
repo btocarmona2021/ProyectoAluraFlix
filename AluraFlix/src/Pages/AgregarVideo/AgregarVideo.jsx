@@ -112,6 +112,7 @@ const CamposEstilizados = styled.div
 
 export const AgregarVideo = () => {
 
+
     return (
         <ContenedorFormulario>
             <CabeceroForm>
@@ -119,7 +120,7 @@ export const AgregarVideo = () => {
                 <p>COMPLETE EL FORMULARIO PARA CREAR UNA NUEVA TARJETA DE VIDEO</p>
             </CabeceroForm>
             <FormEstilizado>
-                <h1>Crear Categoria</h1>
+                <h1>Crear Tarjeta</h1>
                 <div>
                     <CamposEstilizados>
                         <label htmlFor="">Titulo</label>
@@ -128,7 +129,7 @@ export const AgregarVideo = () => {
 
                     <CamposEstilizados>
                         <label htmlFor="">Categoría</label>
-                        <Categorias/>
+                        <Categorias url={"/categorias"}/>
                     </CamposEstilizados>
                 </div>
                 <div>

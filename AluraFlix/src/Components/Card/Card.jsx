@@ -5,29 +5,32 @@ import {MdOutlineDeleteForever} from "react-icons/md";
 const CardEstilizado = styled.div
     `
         width: 360px;
-        height: 268px ;
+        height: 268px;
         border: 4px solid #6BD1FF;
-        border-radius:15px ;
+        border-radius: 15px;
         box-shadow: 0 0 3px 7px #6BD1FF inset;
         overflow: hidden;
     `
 const VideoEstilizado = styled.div
     `
         display: flex;
+        position: relative;
         width: 360px;
         height: 218px;
-        img {
+        overflow: hidden;
+        a img {
             width: 350px;
             height: 216px;
             object-fit: cover;
         }
-
+       
     `
 const EdicionEstilizado = styled.div
     `
         display: flex;
         align-items: center;
         justify-content: space-between;
+
         .icono {
             font-size: 30px;
             color: #F5F5F5;
@@ -37,7 +40,8 @@ const EdicionEstilizado = styled.div
             font-size: 20px;
             color: #F5F5F5;
         }
-        div{
+
+        div {
             display: flex;
             align-items: center;
             gap: 0 10px;
@@ -49,11 +53,16 @@ const EdicionEstilizado = styled.div
     `
 
 
-export const Card = () => {
+export const Card = ({tarjeta}) => {
+
+    const {id, titulo, enlace, imagen, categoria, descripcion} = tarjeta
+
     return (
         <CardEstilizado>
             <VideoEstilizado>
-                <img src="/img/VideoCard01.png" alt=""/>
+                <a href={enlace} target={'blank'}>
+                    <img src={imagen} alt=""/>
+                </a>
             </VideoEstilizado>
             <EdicionEstilizado>
                 <div>

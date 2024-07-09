@@ -1,4 +1,6 @@
 import styled from "styled-components";
+import {Link} from "react-router-dom";
+
 
 const NavEstilizado = styled.nav
     `
@@ -45,8 +47,8 @@ export const Header = () => {
             <NavEstilizado>
                 <img src="/img/logo.png" alt="Logo Alura Flix"/>
                 <div>
-                    <BotonEstilizado>HOME</BotonEstilizado>
-                    <BotonEstilizado>NUEVO VIDEO</BotonEstilizado>
+                    <Link to={'/'}><BotonEstilizado>HOME</BotonEstilizado></Link>
+                    <Link to={'/agregar'}><BotonEstilizado>NUEVO VIDEO</BotonEstilizado></Link>
                 </div>
             </NavEstilizado>
         </>

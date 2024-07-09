@@ -83,74 +83,77 @@
   ],
   "videos": [
     {
-      "titulo": "Introducción a React.js",
+      "id": "1",
+      "titulo": "React Tutorial for Beginners",
       "enlace": "https://www.youtube.com/watch?v=Ke90Tje7VS0",
-      "imagen": "https://example.com/react-intro.jpg",
+      "imagen": "https://react-aluraflix-s1.vercel.app/assets/img/frontend1.png",
       "categoria": "Desarrollo Frontend",
       "descripcion": "Aprende los conceptos básicos de React.js, cómo crear componentes, manejar el estado y utilizar JSX para desarrollar interfaces de usuario dinámicas."
     },
     {
-      "titulo": "Node.js: Construyendo una API RESTful",
-      "enlace": "https://www.youtube.com/watch?v=9rSlkIyrQ0A",
-      "imagen": "https://example.com/node-api.jpg",
+      "id": "2",
+      "titulo": "Introducción a Angular",
+      "enlace": "https://www.youtube.com/watch?v=Fdf5aTYRW0E",
+      "imagen": "https://react-aluraflix-s1.vercel.app/assets/img/frontend2.png",
+      "categoria": "Desarrollo Frontend",
+      "descripcion": "Descubre los fundamentos de Angular, cómo crear aplicaciones web escalables y mantener un código organizado."
+    },
+    {
+      "id": "3",
+      "titulo": "Introducción a Vue.js",
+      "enlace": "https://www.youtube.com/watch?v=FXpIoQ_rT_c",
+      "imagen": "https://react-aluraflix-s1.vercel.app/assets/img/frontend3.png",
+      "categoria": "Desarrollo Frontend",
+      "descripcion": "Aprende a crear aplicaciones web dinámicas con Vue.js, utilizando sus características de reactividad y componentes."
+    },
+    {
+      "id": "4",
+      "titulo": "Node.js Tutorial for Beginners",
+      "enlace": "https://www.youtube.com/watch?v=UyYGRiTZq6A",
+      "imagen": "https://react-aluraflix-s1.vercel.app/assets/img/backend1.png",
       "categoria": "Desarrollo Backend",
-      "descripcion": "Descubre cómo construir una API RESTful utilizando Node.js y Express, implementando rutas, middlewares y conectando con una base de datos."
+      "descripcion": "Descubre los fundamentos de Node.js, cómo crear aplicaciones web escalables y utilizar sus características de asincronía."
     },
     {
-      "titulo": "Introducción a Docker",
-      "enlace": "https://www.youtube.com/watch?v=-2Ztjxz3_4E",
-      "imagen": "https://example.com/docker-intro.jpg",
-      "categoria": "DevOps y Despliegue",
-      "descripcion": "Explora los fundamentos de Docker, cómo crear, gestionar y desplegar contenedores para aplicaciones de forma eficiente y escalable."
+      "id": "5",
+      "titulo": "Introducción a Ruby on Rails",
+      "enlace": "https://www.youtube.com/watch?v=fmyvWz1fk2c",
+      "imagen": "https://react-aluraflix-s1.vercel.app/assets/img/backend2.png",
+      "categoria": "Desarrollo Backend",
+      "descripcion": "Aprende a crear aplicaciones web dinámicas con Ruby on Rails, utilizando sus características de MVC y ORM."
     },
     {
-      "titulo": "Análisis de Datos con Python y Pandas",
-      "enlace": "https://www.youtube.com/watch?v=XK8R9lVVwgg",
-      "imagen": "https://example.com/python-pandas.jpg",
-      "categoria": "Ciencia de Datos y Analítica",
-      "descripcion": "Aprende a realizar análisis de datos utilizando Python y la biblioteca Pandas, desde la carga de datos hasta la generación de insights y visualizaciones."
+      "id": "6",
+      "titulo": "Desarrollo de Aplicaciones Móviles con React Native",
+      "enlace": "https://www.youtube.com/watch?v=QwydGpLWz6A",
+      "imagen": "https://react-aluraflix-s1.vercel.app/assets/img/backend3.png",
+      "categoria": "Desarrollo de Aplicaciones Móviles",
+      "descripcion": "Aprende a crear aplicaciones móviles nativas con React Native, utilizando sus características de componentes y estilos."
     },
     {
-      "titulo": "Fundamentos de Diseño UI/UX",
-      "enlace": "https://www.youtube.com/watch?v=oSAsCquXh4A",
-      "imagen": "https://example.com/ui-ux-design.jpg",
-      "categoria": "Diseño UI/UX",
-      "descripcion": "Descubre los principios básicos del diseño de interfaz de usuario (UI) y experiencia de usuario (UX) para crear productos intuitivos y atractivos."
+      "id": "7",
+      "titulo": "Introducción a Django",
+      "enlace": "https://www.youtube.com/watch?v=e7df6fX3zQw",
+      "imagen": "https://react-aluraflix-s1.vercel.app/assets/img/IG1.png",
+      "categoria": "Desarrollo Backend",
+      "descripcion": "Aprende a crear aplicaciones web escalables con Django, utilizando sus características de ORM y autenticación."
     },
     {
-      "titulo": "Automatización de Pruebas con Selenium",
-      "enlace": "https://www.youtube.com/watch?v=zTa-SmhfynM",
-      "imagen": "https://example.com/selenium-testing.jpg",
-      "categoria": "Aseguramiento de la Calidad y Pruebas",
-      "descripcion": "Aprende a automatizar pruebas de software con Selenium WebDriver, escribiendo scripts para probar aplicaciones web de forma eficiente y efectiva."
-    },
-    {
-      "titulo": "Gestión de Proyectos Agile con Scrum",
-      "enlace": "https://www.youtube.com/watch?v=g2DFVUzL1Wk",
-      "imagen": "https://example.com/scrum-agile.jpg",
-      "categoria": "Project Management",
-      "descripcion": "Entiende los principios de Scrum y cómo implementar la metodología Agile para gestionar proyectos de forma colaborativa y adaptable."
-    },
-    {
-      "titulo": "Seguridad en Redes y Firewalls",
-      "enlace": "https://www.youtube.com/watch?v=4tGyAZNeGww",
-      "imagen": "https://example.com/network-security.jpg",
-      "categoria": "Seguridad de Redes",
-      "descripcion": "Explora los fundamentos de la seguridad en redes, incluyendo firewalls, protocolos seguros y prácticas para proteger datos y sistemas."
-    },
-    {
-      "titulo": "Infraestructura en la Nube con AWS",
-      "enlace": "https://www.youtube.com/watch?v=NR2dQjD8IR4",
-      "imagen": "https://example.com/aws-cloud.jpg",
-      "categoria": "Cloud Infrastructure",
-      "descripcion": "Aprende a diseñar, implementar y gestionar infraestructuras en la nube utilizando Amazon Web Services (AWS) para escalabilidad y seguridad."
-    },
-    {
-      "titulo": "Administración Avanzada de Bases de Datos",
-      "enlace": "https://www.youtube.com/watch?v=ub3HtxVcYPw",
-      "imagen": "https://example.com/database-admin.jpg",
-      "categoria": "Administración de Bases de Datos",
-      "descripcion": "Descubre técnicas avanzadas para administrar bases de datos SQL y NoSQL, optimizando rendimiento, seguridad y disponibilidad."
+      "id": "8",
+      "titulo": "Desarrollo de Aplicaciones Web con Laravel",
+      "enlace": "https://www.youtube.com/watch?v=V4JSB9L9v6A",
+      "imagen": "https://www.youtube.com/watch?v=YhR7Zp8NUzE",
+      "categoria": "Desarrollo Backend",
+      "descripcion": "Aprende a crear aplicaciones web dinámicas con Laravel, utilizando sus características de routing y Eloquent ORM."
+    }
+    ,{
+      "id": "9",
+      "titulo": "Desarrollo de Aplicaciones Web Con React Native",
+      "enlace": "https://www.youtube.com/watch?v=V4JSB9L9v6A",
+      "imagen": "https://react-aluraflix-s1.vercel.app/assets/img/IG3.png",
+      "categoria": "Desarrollo de Aplicaciones Móviles",
+      "descripcion": "Aprende a crear aplicaciones web dinámicas con React Native, utilizando sus características de routing y Eloquent ORM."
     }
   ]
 }
+

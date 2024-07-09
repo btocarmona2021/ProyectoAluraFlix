@@ -1,20 +1,31 @@
 import {Header} from "./Components/Header/Header.jsx";
 import {EstilosGlobales} from "./Components/EstilosGlobales/EstilosGlobales.jsx";
-import {BannerMain} from "./Components/BannerMain/BannerMain.jsx";
-import {Cards} from "./Components/Cards/Cards.jsx";
 import {Footer} from "./Components/Footer/Footer.jsx";
+import {BrowserRouter as Router,Routes,Route} from "react-router-dom";
+import {Home} from "./Pages/Home/Home.jsx";
 import {AgregarVideo} from "./Pages/AgregarVideo/AgregarVideo.jsx";
-
 
 function App() {
     return (
         <>
-            <EstilosGlobales/>
-            <Header/>
-            <AgregarVideo/>
-            <BannerMain/>
-            <Cards/>
-            <Footer/>
+            <Router>
+                <EstilosGlobales/>
+                <Header/>
+                <Routes>
+                    <Route path={'/'} element={<Home/>}/>
+                    <Route path={'/agregar'} element={<AgregarVideo/>}/>
+                </Routes>
+                <Footer/>
+            </Router>
+
+
+
+
+
+            {/*<EstilosGlobales/>*/}
+            {/*<Header/>*/}
+            {/*<AgregarVideo/>*/}
+            {/*<Footer/>*/}
         </>
     )
 }
