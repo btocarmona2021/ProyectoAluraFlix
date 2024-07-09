@@ -2,83 +2,53 @@
   "categorias": [
     {
       "id": "1",
-      "nombreequipo": "Desarrollo Frontend"
+      "nombreequipo": "Desarrollo Frontend",
+      "color": "#FF5733"
     },
     {
       "id": "2",
-      "nombreequipo": "Desarrollo Backend"
+      "nombreequipo": "Desarrollo Backend",
+      "color": "#33FF57"
     },
     {
       "id": "3",
-      "nombreequipo": "Desarrollo Full Stack"
+      "nombreequipo": "Desarrollo Full Stack",
+      "color": "#3357FF"
     },
     {
       "id": "4",
-      "nombreequipo": "Desarrollo de Aplicaciones Móviles"
+      "nombreequipo": "Desarrollo de Aplicaciones Móviles",
+      "color": "#FF33A1"
     },
     {
       "id": "5",
-      "nombreequipo": "DevOps y Despliegue"
+      "nombreequipo": "DevOps y Despliegue",
+      "color": "#33FFF0"
     },
     {
       "id": "6",
-      "nombreequipo": "Ciencia de Datos y Analítica"
+      "nombreequipo": "Ciencia de Datos y Analítica",
+      "color": "#FFDD33"
     },
     {
       "id": "7",
-      "nombreequipo": "Diseño UI/UX"
+      "nombreequipo": "Diseño UI/UX",
+      "color": "#A133FF"
     },
     {
       "id": "8",
-      "nombreequipo": "Aseguramiento de la Calidad y Pruebas"
+      "nombreequipo": "Aseguramiento de la Calidad y Pruebas",
+      "color": "#FF9633"
     },
     {
       "id": "9",
-      "nombreequipo": "Gestión de Proyectos"
+      "nombreequipo": "Gestión de Proyectos",
+      "color": "#33FF94"
     },
     {
       "id": "10",
-      "nombreequipo": "Soporte de TI y Operaciones"
-    },
-    {
-      "id": "11",
-      "nombreequipo": "Seguridad de Redes"
-    },
-    {
-      "id": "12",
-      "nombreequipo": "Infraestructura en la Nube"
-    },
-    {
-      "id": "13",
-      "nombreequipo": "Administración de Bases de Datos"
-    },
-    {
-      "id": "14",
-      "nombreequipo": "Investigación en Aprendizaje Automático"
-    },
-    {
-      "id": "15",
-      "nombreequipo": "Soporte al Cliente"
-    },
-    {
-      "id": "16",
-      "nombreequipo": "Marketing y Comunicación"
-    },
-    {
-      "id": "17",
-      "nombreequipo": "Creación de Contenidos"
-    },
-    {
-      "id": "18",
-      "nombreequipo": "Inteligencia de Negocios"
-    },
-    {
-      "id": "19",
-      "nombreequipo": "Finanzas y Contabilidad"
-    },
-    {
-      "id": "20",
-      "nombreequipo": "Legal y Cumplimiento"
+      "nombreequipo": "Soporte de TI y Operaciones",
+      "color": "#FF3333"
     }
   ],
   "videos": [
@@ -142,18 +112,33 @@
       "id": "8",
       "titulo": "Desarrollo de Aplicaciones Web con Laravel",
       "enlace": "https://www.youtube.com/watch?v=V4JSB9L9v6A",
-      "imagen": "https://www.youtube.com/watch?v=YhR7Zp8NUzE",
+      "imagen": "https://react-aluraflix-s1.vercel.app/assets/img/IG2.png",
       "categoria": "Desarrollo Backend",
       "descripcion": "Aprende a crear aplicaciones web dinámicas con Laravel, utilizando sus características de routing y Eloquent ORM."
-    }
-    ,{
+    },
+    {
       "id": "9",
       "titulo": "Desarrollo de Aplicaciones Web Con React Native",
       "enlace": "https://www.youtube.com/watch?v=V4JSB9L9v6A",
       "imagen": "https://react-aluraflix-s1.vercel.app/assets/img/IG3.png",
       "categoria": "Desarrollo de Aplicaciones Móviles",
       "descripcion": "Aprende a crear aplicaciones web dinámicas con React Native, utilizando sus características de routing y Eloquent ORM."
+    },
+    {
+      "id": "10",
+      "titulo": "peeerororr",
+      "categoria": "Desarrollo Backend",
+      "imagen": "asdasdad",
+      "enlace": "jajajajaa",
+      "descripcion": "jejejeje"
+    },
+    {
+      "id": "11",
+      "titulo": "Desarrollo Fronteddaaa",
+      "categoria": "Desarrollo Frontend",
+      "imagen": "https://www.kiwop.com/wp-content/uploads/2023/10/frontend-1.jpg",
+      "enlace": "https://www.youtube.com/watch?v=S4Mh-z2FOEg&t=29s",
+      "descripcion": "dfdsadad"
     }
   ]
 }
-

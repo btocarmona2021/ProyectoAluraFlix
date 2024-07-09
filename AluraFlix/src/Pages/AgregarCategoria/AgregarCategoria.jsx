@@ -1,9 +1,6 @@
 import {Campo} from "../../Components/Campo/Campo.jsx";
-import {Categorias} from "../../Components/SelectCategoria/Categorias.jsx";
 import styled from "styled-components";
-import {buscar, guardar} from "../../ConexionApi/ConexionApi.jsx";
-import {useEffect, useState} from "react";
-import {Link, useNavigate} from "react-router-dom";
+
 
 const ContenedorFormulario = styled.div
     `
@@ -41,7 +38,7 @@ const FormEstilizado = styled.form
         align-items: center;
         flex-wrap: wrap;
         width: 1000px;
-        height: 860px;
+        height: 440px;
         background-color: #111111;
         margin: 0 auto;
 
@@ -107,94 +104,29 @@ const CamposEstilizados = styled.div
             box-shadow: 0 0 20px 2px blueviolet;
         }
 
-        textarea {
-            margin: 0;
-            background-color: #191919;
-            height: 500px;
-            width: 573px;
-            border-radius: 10px;
-            outline: 3px solid #555555;
-            color: #F5F5F5;
-            font-size: 20px;
-        }
-
     `
 
-export const AgregarVideo = ({url}) => {
-
-    const [tarjetas, setTarjetas] = useState([])
-    useEffect(() => {
-        buscar(url, setTarjetas).catch(error => console.log(error))
-    }, [tarjetas]);
-    const navegador = useNavigate()
-
-    const registrar = (ev) => {
-        ev.preventDefault()
-        const titulo = document.querySelector('#titulo').value
-        const categoria = document.querySelector('#categoria').value
-        const imagen = document.querySelector('#imagen').value
-        const enlace = document.querySelector('#enlace').value
-        const descripcion = document.querySelector('#desc').value
-
-        const nuevaTarjeta = {
-            id: `${tarjetas.length + 1}`,
-            titulo,
-            categoria,
-            imagen,
-            enlace,
-            descripcion
-        }
-
-        guardar(url, nuevaTarjeta).then(resp => {
-            alert('Tarjeta guardada exitosamente.');
-        })
-            .catch(error => {
-                alert(`Ocurrió un error al intentar guardar la tarjeta.${error}`);
-            });
-        navegador('/')
-    }
-
+export const AgregarCategoria = () => {
     return (
         <ContenedorFormulario>
             <CabeceroForm>
-                <h1>Nuevo Video</h1>
-                <p>COMPLETE EL FORMULARIO PARA CREAR UNA NUEVA TARJETA DE VIDEO</p>
+                <h1>Nueva Categoria</h1>
+                <p>COMPLETE EL FORMULARIO PARA CREAR UNA NUEVA CATEGORIA</p>
             </CabeceroForm>
-            <FormEstilizado onSubmit={registrar}>
-                <h1>Crear Tarjeta</h1>
+            <FormEstilizado>
+                <h1>Crear Categoria</h1>
                 <div>
                     <CamposEstilizados>
                         <label htmlFor={'titulo'}>Titulo</label>
                         <Campo type="text" id={'titulo'} place={'Ingrese el titulo'}/>
                     </CamposEstilizados>
-
                     <CamposEstilizados>
-                        <label htmlFor="">Categoría</label>
-                        <Categorias url={"/categorias"}/>
-                    </CamposEstilizados>
-                </div>
-                <div>
-                    <CamposEstilizados>
-                        <label htmlFor={'enlace'}>Imagen</label>
-                        <Campo type="text" id={'imagen'} place={'El enlace es obligatorio'}/>
-                    </CamposEstilizados>
-
-                    <CamposEstilizados>
-                        <label htmlFor="">Video</label>
-                        <Campo type="text" id={'enlace'} place={'Ingrese el enlace del video'}/>
-                    </CamposEstilizados>
-                </div>
-                <div>
-                    <CamposEstilizados>
-                        <label htmlFor="">Descripción</label>
-                        <textarea name="" id="desc" cols="30" rows="10"></textarea>
+                        <label htmlFor={'enlace'}>Color</label>
+                        <Campo type="color" id={'color'} place={'Eliga el color'}/>
                     </CamposEstilizados>
                 </div>
                 <button>GUARDAR</button>
                 <button type={'reset'}>LIMPIAR</button>
-                <Link to={'/addcategoria'}>
-                    <button>AGREGAR CATEGORIA</button>
-                </Link>
             </FormEstilizado>
         </ContenedorFormulario>
     )

@@ -10,4 +10,9 @@ export const buscar = async (url, setData) => {
     setData(respuesta.data)
 }
 
+export const guardar = async (url,dato)=>{
+    await api.post(url,dato)
+
+}
+
 

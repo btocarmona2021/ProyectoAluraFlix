@@ -18,10 +18,18 @@ const VideoEstilizado = styled.div
         width: 360px;
         height: 218px;
         overflow: hidden;
-        a img {
-            width: 350px;
-            height: 216px;
+        a{
+            width: 380px;
+            
+            
+        }
+        img {
+            width: 354px;
+            height: 222px;
             object-fit: cover;
+            border: 4px solid #6BD1FF;
+            border-radius: 10px 10px 0 0;
+           
         }
        
     `
@@ -30,7 +38,9 @@ const EdicionEstilizado = styled.div
         display: flex;
         align-items: center;
         justify-content: space-between;
-
+        background-color: #222222;
+        border: 4px solid #6BD1FF;
+        border-radius: 0 0 10px 10px;
         .icono {
             font-size: 30px;
             color: #F5F5F5;
@@ -47,11 +57,10 @@ const EdicionEstilizado = styled.div
             gap: 0 10px;
             padding: 0 40px;
             box-sizing: border-box;
-            height: 40px;
+            height: 34px;
         }
 
     `
-
 
 export const Card = ({tarjeta}) => {
 
@@ -61,7 +70,7 @@ export const Card = ({tarjeta}) => {
         <CardEstilizado>
             <VideoEstilizado>
                 <a href={enlace} target={'blank'}>
-                    <img src={imagen} alt=""/>
+                    <img src={imagen}  alt=""/>
                 </a>
             </VideoEstilizado>
             <EdicionEstilizado>

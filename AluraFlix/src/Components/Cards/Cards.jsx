@@ -5,23 +5,23 @@ import {buscar} from "../../ConexionApi/ConexionApi.jsx";
 
 const ContenedorCards = styled.div`
     width: 1280px;
-    margin: 0 auto;
+    margin: 10px auto;
     display: flex;
     flex-direction: column;
     align-items: start;
-    background-color: #111111;
-    padding: 20px;
+    border-radius: 10px;
+    padding: 10px 0;
 
     button {
         width: auto;
         height: 56px;
         border-radius: 15px;
-        background-color: #6bd1ff;
+        background-color: ${props=>props.$color ? props.categoria.color : '#222222'};
         font-family: Roboto, sans-serif;
         font-weight: normal;
         font-size: 32px;
-        color: #f5f5f5;
         padding: 0 10px;
+        color: #f5f5f5;
     }
 `
 
@@ -31,7 +31,7 @@ const Cardss = styled.div`
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
-    margin: 0 auto;
+    margin: 10px auto;
 `
 
 export const Cards = ({url, url2}) => {
@@ -53,8 +53,8 @@ export const Cards = ({url, url2}) => {
                     return null; // No renderizar si no hay tarjetas
                 }
                 return (
-                    <ContenedorCards key={categoria.nombreequipo}>
-                        <button>{categoria.nombreequipo}</button>
+                    <ContenedorCards key={categoria.nombreequipo} style={{backgroundColor: `${categoria.color}40`}}>
+                        <button style={{backgroundColor:categoria.color}} >{categoria.nombreequipo}</button>
                         <Cardss>
                             {tarjetasFiltradas.map((tarjeta) => (
                                 <Card tarjeta={tarjeta} key={tarjeta.id}/>

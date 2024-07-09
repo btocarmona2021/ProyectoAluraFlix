@@ -27,7 +27,7 @@ export const Categorias = ({url}) => {
 
     return (
         <>
-            <SelectEstilizado name="" id="">
+            <SelectEstilizado name="" id="categoria" required={true}>
                 <option value="">Seleccione una categoría</option>
                 ${categorias.map((categoria)=>{
                     return <option value={categoria.nombreequipo} key={categoria.id}>{categoria.nombreequipo}</option>
