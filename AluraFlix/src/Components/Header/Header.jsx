@@ -49,6 +49,7 @@ export const Header = () => {
                 <div>
                     <Link to={'/'}><BotonEstilizado>HOME</BotonEstilizado></Link>
                     <Link to={'/agregar'}><BotonEstilizado>NUEVO VIDEO</BotonEstilizado></Link>
+                    <Link to={'/agregarcategoria'}><BotonEstilizado>AGREGAR CATEGORIA</BotonEstilizado></Link>
                 </div>
             </NavEstilizado>
         </>

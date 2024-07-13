@@ -1,5 +1,7 @@
 import {Campo} from "../../Components/Campo/Campo.jsx";
 import styled from "styled-components";
+import {useState} from "react";
+import {guardar} from "../../ConexionApi/ConexionApi.jsx";
 
 
 const ContenedorFormulario = styled.div
@@ -107,6 +109,19 @@ const CamposEstilizados = styled.div
     `
 
 export const AgregarCategoria = () => {
+
+    const [titulo, setTitulo] = useState('')
+    const [color, setColor] = useState('')
+
+    const nuevaCategoria = {
+        nombreequipo: titulo,
+        color: color
+    }
+
+    const guardarCategoria = (url,nuevaCategoria) => {
+        guardar(url, nuevaCategoria)
+    }
+
     return (
         <ContenedorFormulario>
             <CabeceroForm>
@@ -118,14 +133,19 @@ export const AgregarCategoria = () => {
                 <div>
                     <CamposEstilizados>
                         <label htmlFor={'titulo'}>Titulo</label>
-                        <Campo type="text" id={'titulo'} place={'Ingrese el titulo'}/>
+                        <Campo type="text" id={'titulo'} place={'Ingrese el titulo'}
+                               onChange={(ev) => setTitulo(ev.target.value)}/>
                     </CamposEstilizados>
                     <CamposEstilizados>
                         <label htmlFor={'enlace'}>Color</label>
-                        <Campo type="color" id={'color'} place={'Eliga el color'}/>
+                        <Campo type="color" id={'color'} place={'Eliga el color'}
+                               onChange={(ev) => setColor(ev.target.value)}/>
                     </CamposEstilizados>
                 </div>
-                <button>GUARDAR</button>
+                <button onClick={(ev)=>{
+                    ev.preventDefault()
+                    guardarCategoria('/categorias',nuevaCategoria)
+                }}>GUARDAR</button>
                 <button type={'reset'}>LIMPIAR</button>
             </FormEstilizado>
         </ContenedorFormulario>

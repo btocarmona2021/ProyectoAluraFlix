@@ -49,6 +49,21 @@
       "id": "10",
       "nombreequipo": "Soporte de TI y Operaciones",
       "color": "#FF3333"
+    },
+    {
+      "id": "9930",
+      "nombreequipo": "Nueva Categoria",
+      "color": "#026b7e"
+    },
+    {
+      "id": "f011",
+      "nombreequipo": "Nabos Online",
+      "color": "#84bd00"
+    },
+    {
+      "id": "fc12",
+      "nombreequipo": "Master en Arduino",
+      "color": "#b000bd"
     }
   ],
   "videos": [
@@ -93,12 +108,20 @@
       "descripcion": "Aprende a crear aplicaciones web dinámicas con Ruby on Rails, utilizando sus características de MVC y ORM."
     },
     {
+      "id": "6",
+      "titulo": "React Tutorial con EdTeam 3",
+      "categoria": "Desarrollo Frontend",
+      "imagen": "https://edteam-media.s3.amazonaws.com/blogs/original/688b0800-edf9-4c35-8fa9-533dbef9e5cf.png",
+      "enlace": "https://www.youtube.com/watch?v=lWQ69WX7-hA",
+      "descripcion": "prueba 3"
+    },
+    {
       "id": "7",
-      "titulo": "Introducción a Django",
-      "enlace": "https://www.youtube.com/watch?v=e7df6fX3zQw",
-      "imagen": "https://react-aluraflix-s1.vercel.app/assets/img/IG1.png",
-      "categoria": "Desarrollo Backend",
-      "descripcion": "Aprende a crear aplicaciones web escalables con Django, utilizando sus características de ORM y autenticación."
+      "titulo": "Master en Arduino con Tincho",
+      "categoria": "Master en Arduino",
+      "imagen": "https://laestacioncyt.es/wp-content/uploads/2020/11/ARDUINO-BASICO-_-ESPACIO-MAKER-1024x576.jpg",
+      "enlace": "https://www.youtube.com/watch?v=eBVvD85Ml2c",
+      "descripcion": "Nuevo video sobre Arduino"
     }
   ]
 }

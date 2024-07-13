@@ -125,7 +125,6 @@ const CamposEstilizados = styled.div
 
     `
 
-
 export const ModalEdicion = ({tarjeta, estado, setEstado}) => {
 
     const cerrarEdicion = (ev) => {
@@ -133,6 +132,7 @@ export const ModalEdicion = ({tarjeta, estado, setEstado}) => {
         setEstado(!estado)
 
     }
+
     const [titulo, setTitulo] = useState(tarjeta.titulo)
     const [categoria, setCategoria] = useState(tarjeta.categoria)
     const [imagen, setImagen] = useState(tarjeta.imagen)
@@ -149,7 +149,6 @@ export const ModalEdicion = ({tarjeta, estado, setEstado}) => {
     const actualizaTarjeta = (url, tarjetaupdate) => {
         actualizar(url, tarjetaupdate).then().catch(error=>console.log(error))
         setEstado(!estado)
-        window.location.href='/'
     }
 
     return (
@@ -165,7 +164,6 @@ export const ModalEdicion = ({tarjeta, estado, setEstado}) => {
                         <Campo type="text" value={titulo} id={'titulo'} place={'Ingrese el titulo'}
                                onChange={(e) => setTitulo(e.target.value)}/>
                     </CamposEstilizados>
-
                     {/*<CamposEstilizados>*/}
                     {/*    <label htmlFor="">Categoría</label>*/}
                     {/*    <Categorias value={categoria} url={"/categorias"} onChange={(e) => setCategoria(e.target.value)}/>*/}

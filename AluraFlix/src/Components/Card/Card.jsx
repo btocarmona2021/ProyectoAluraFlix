@@ -68,6 +68,7 @@ const EdicionEstilizado = styled.div
 export const Card = ({tarjeta}) => {
 
     const [estado,setEstado] = useState(false)
+
     const {id, titulo, enlace, imagen, categoria, descripcion} = tarjeta
 
     const editar = ()=>{
@@ -76,7 +77,7 @@ export const Card = ({tarjeta}) => {
 
     const eliminar =(url,tarjeta)=>{
         borrar(url, tarjeta).then().catch()
-        window.location.href='/'
+
     }
 
     return (

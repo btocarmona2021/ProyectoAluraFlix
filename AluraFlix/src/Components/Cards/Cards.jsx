@@ -44,7 +44,7 @@ export const Cards = ({url, url2,estado,setEstado}) => {
     useEffect(() => {
         buscar(url, setTarjetas).catch((error) => console.log(error));
         buscar(url2, setCategorias).catch((error) => console.log(error));
-    }, [url, url2]);
+    }, [url, url2,tarjetas]);
 
     return (
         <ContenedorCards>

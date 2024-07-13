@@ -17,7 +17,7 @@ function App() {
                 <Routes>
                     <Route path={'/'} element={<Home/>}/>
                     <Route path={'/agregar'} element={<AgregarVideo url={'/videos'}/>}/>
-                    <Route path={'/addcategoria'} element={<AgregarCategoria/>}/>
+                    <Route path={'/agregarcategoria'} element={<AgregarCategoria/>}/>
                     <Route path={'*'} element={<Error404/>} />
                 </Routes>
                 <Footer/>
