@@ -1,10 +1,10 @@
 
 export const Campo = (props) => {
-    const {id,type,place} = props
+    const {id,type,place,value,onChange} = props
 
     return (
         <>
-            <input type={type} id={id} placeholder={place} required={true}/>
+            <input type={type} value={value} id={id} placeholder={place} required={true} onChange={onChange}/>
         </>
     )
 }

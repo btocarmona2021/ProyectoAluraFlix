@@ -2,6 +2,7 @@ import {Card} from "../Card/Card.jsx";
 import styled from "styled-components";
 import {useEffect, useState} from "react";
 import {buscar} from "../../ConexionApi/ConexionApi.jsx";
+import {ModalEdicion} from "../Modal/ModalEdicion.jsx";
 
 const ContenedorCards = styled.div`
     width: 1280px;
@@ -34,7 +35,7 @@ const Cardss = styled.div`
     margin: 10px auto;
 `
 
-export const Cards = ({url, url2}) => {
+export const Cards = ({url, url2,estado,setEstado}) => {
 
     const [tarjetas, setTarjetas] = useState([]);
 

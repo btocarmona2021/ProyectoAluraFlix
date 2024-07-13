@@ -3,6 +3,8 @@ import {Cards} from "../../Components/Cards/Cards.jsx";
 
 
 export const Home = () => {
+
+
     return (
         <>
             <BannerMain/>

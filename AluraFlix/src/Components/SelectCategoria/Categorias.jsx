@@ -17,7 +17,7 @@ const SelectEstilizado = styled.select
         }
     `
 
-export const Categorias = ({url}) => {
+export const Categorias = ({url,value,onChange}) => {
 
     const [categorias,setCategorias]=useState([])
 
@@ -29,10 +29,12 @@ export const Categorias = ({url}) => {
         <>
             <SelectEstilizado name="" id="categoria" required={true}>
                 <option value="">Seleccione una categoría</option>
-                ${categorias.map((categoria)=>{
-                    return <option value={categoria.nombreequipo} key={categoria.id}>{categoria.nombreequipo}</option>
-            })}
-
+                {categorias.map((categoria) => (
+                    <option value={categoria.nombreequipo} key={categoria.id} selected={categoria.nombreequipo === value}
+                    >
+                        {categoria.nombreequipo}
+                    </option>
+                ))}
             </SelectEstilizado>
 
         </>

@@ -12,7 +12,17 @@ export const buscar = async (url, setData) => {
 
 export const guardar = async (url,dato)=>{
     await api.post(url,dato)
+}
+export const actualizar = async (url, dato) => {
+    try {
+        const response = await api.patch(url, dato);
 
+    } catch (error) {
+        console.error('Error al actualizar:', error);
+    }
 }
 
+export const borrar = async (url,dato)=>{
+    await api.delete(url,dato).then().catch()
+}
 

@@ -7,6 +7,7 @@ import {AgregarVideo} from "./Pages/AgregarVideo/AgregarVideo.jsx";
 import {AgregarCategoria} from "./Pages/AgregarCategoria/AgregarCategoria.jsx";
 import {Error404} from "./Pages/Error404/Error404.jsx";
 
+
 function App() {
     return (
         <>
